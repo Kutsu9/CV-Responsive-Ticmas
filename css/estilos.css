@@ -1,0 +1,52 @@
+p {font-family: 'Roboto', sans-serif;
+    color: red;
+}
+/*Comentarios dentro de un documento .ccs*/
+
+h1 {
+    border: 4px dashed  coral;
+    border-left: 6px solid red;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    color: aqua;
+    content: color blue
+}
+
+body {background-color: lightgoldenrodyellow ;}
+
+
+section {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+/*Asi se invoca un ID*/
+#mi_parrafo {
+    color:blueviolet
+}
+
+/*Se puede utilizar clases cuando tenemos que poner en multiples documentos*/
+.estaesmiclase {
+    font-weight: bold;
+    color: lightblue;
+
+}
+
+/*Fila*/
+.row {
+    background-color: blueviolet;
+    border: 4px solid chocolate;
+
+    margin: 5px;
+
+}
+/*Columna*/
+.col {
+    font-size: 15px;
+    border: 3px solid rgb(50, 168, 66);
+    padding: 5px;
+    
+}
