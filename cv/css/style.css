@@ -1,19 +1,5 @@
-a {
-    color: brown;
-}
-* {
-    box-sizing: border-box;
-  }
-  /*Barra de navegacion*/
-  .navbar {
-    padding: 7px;
-    background-color: #f5f6f7
-  }
-  .navbar-collapse {
-    align-items: center;
-    justify-content: space-between;
-  }
-  /*Estilos generales*/
+
+/*Estilos generales*/
   section {
     display: flex;
     flex-direction: column;
@@ -24,6 +10,46 @@ a {
     font-size: 2.5rem;
     font-family: 'Secular One', sans-serif;
   }
+  .seccion-oscura {
+    color: white;
+    background-color:  #1b1b32;
+  }
+  
+  .seccion-clara {
+    color:black;
+    background-color: #f5f6f7;
+  }
+
+
+  .seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Secular One', sans-serif;
+  }
+
+  .seccion-titulo-texto-blanco {
+    color: white;
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Secular One', sans-serif;
+
+  }
+  .seccion-texto {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+/*Barra de navegacion*/
+.navbar {
+padding: 7px;
+background-color: #f5f6f7
+}
+.navbar-collapse {
+align-items: center;
+justify-content: space-between;
+}
+
 /*Seccion hero*/
 .hero {
     background-color: #f5f6f7;
@@ -44,19 +70,141 @@ a {
     border-radius: 50%;
     margin: 20px;
 }
-  /*Adaptable (responsivo)*/
+
+/*Sobre mi*/
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+
+}
+/*Experiencia*/
+.experiencia {
+ padding: 40px 40px 60px 40px;
+}
+.experiencia .row div {
+  height: 370px;
+}
+
+.experiencia .columna {
+  padding: 10px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease-in;
+
+}
+.experiencia .columna:hover {
+  background-color: #dadada;
+}
+.experiencia-titulo {
+ font-size: 25px;
+ font-weight: bold;
+ margin-bottom: 0px;
+ font-family: 'Secular One', sans-serif;
+}
+.experiencia-subtitulo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  font-family: "Roboto", sans-serif;
+}
+.experiencia-año {
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+}
+.experiencia-texto {
+ font-size: 15px;
+ font-family: "Roboto", sans-serif;
+}
+
+/* Seccion Educacion*/
+
+.educacion {
+  color: black;
+  padding: 40px 40px 60px 40px;
+
+
+}
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+}
+  /*Adaptable (responsivo) mas chico que..*/
   @media screen and (max-width: 767px){
     .navbar-brand {
         display: none;
     }
+    .btn-claro {
+      margin: auto;
+      margin-top: 1rem;
+    }
+    .btn-oscuro {
+      margin: auto;
+      margin-bottom: 1rem;
+    }
   }
+/* Adaptable (responsivo) mas grande que..*/
+  @media screen and (min-width: 767px){
+    .btn-claro {
+      margin: auto;
 
+    }
+    .btn-oscuro {
+      margin: auto;
+ 
+    }
+  }
+/*Botones cambiar de modo claro a modo oscuro*/
   .btn-claro {
+
     background-color: rgb(216, 216, 216);
     color: black;
-
   }
   .btn-oscuro {
     background-color: rgb(58, 58, 58);
     color: white;
   }
+
+
+
+ .card-img-top {
+
+  max-width: 140px;
+  max-height: 140px;
+
+}
+
+.carta-centrada-imagen {
+  align-items: center;
+  }
+  
+.carta-centrada-titulo {
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+  }
+.carta-centrada-texto {
+  text-align: center;
+  font-family: "roboto", sans-serif;
+}
+.carta-personalizada-2 {
+max-width: 50rem;
+margin: 0 auto;
+}
+.carta-personalizada-3 {
+  max-width: 75rem;
+  margin: 0 auto;
+  }
+
+.link-texto {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    align-content: center;
+}

@@ -37,7 +37,7 @@
                 <img src="/cv/css/images/icon.jpg" width="50" alt="Logo de la pagina web" >
             </a>
             <!--Cambio de modo oscuro-claro-->
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div class="d-grid gap-2 justify-content-start d-md-flex col-auto order-1">  <!--"col-auto order-1" hace que los botones esten hacia la izquierda, es una clase de grid-->
                 <button type="button" class="btn btn-claro"><i class="bi bi-brightness-high"></i></button>
                 
                 <button type="button" class="btn btn-oscuro"><i class="bi bi-moon"></i></button>
@@ -72,11 +72,136 @@
             <img src="" alt="">
         </div>
     </section>
-    <!---->
-    <h1>Curriculum Vitae</h1>
-    <p>Franco Kutsukos</p>
-    <a href="https://www.linkedin.com/in/franco-kutsukos/" target="_blank">Linkedin</a>
-    <a href="https://wa.me/+541127701851" target="_blank">WhatsApp</a>
+    <!--Seccion Sobre Mi-->
+    <section class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Sobre mi</h2>
+        <p class="seccion-texto">Por mi entusiasmo y proactividad tengo facilidad para adaptarme a nuevos entornos y desarrollar habilidades que me dan el poder de afrontar cualquier reto, me destacan mi creatividad y paciencia las cuales me hacen una persona eficiente y resolutiva.
+          En mi trabajo adquiri habilidades sociales como la comunicacion asertiva, la orientacion al servicio y el trabajo en equipo, en el cual considero que la armonia es lo mas importante.
+          Me apasiona el desarrollo personal por lo que constantemente estoy buscando nuevas formas de fortalezer mis habilidades blandas e identificar mis debilidades para trabajar en ellas.
+          Actualmente estoy buscando cambiar de trabajo al sector tecnologico para poder profundizar y optimizar mis estudios.</p>
+      </div>
+    </section>
+    <!--Seccion Experiencia-->
+    <section class="experiencia seccion-clara">
+      <div class="seccion-titulo"><h2>Experiencia</h2></div>
+      <div class="container text-center">
+        <div class="row">
+          <!--Experiencia #1-->
+          <div class="columna col-12 col-md-4">
+            <p class="experiencia-titulo">Atencion al cliente</p>
+            <p class="experiencia-subtitulo">Maxikiosco "Tao"</p>
+            <p class="experiencia-año">Agosto 2017 - Abril 2018</p>
+            <p class="experiencia-texto"> Mi primer trabajo donde pude poner en practica lo aprendido en la Fundacion Forge, la importancia de una buena presencia, responsabilidad, predispocion al servicio y la resolucion de problemas.<br>
+              Donde desempeñe las tareas de reposicion y control de stock, manejo de caja, atencion al cliente y proovedores; tareas que fueron la base de mi segundo trabajo, donde pude perfeccionarlas.</p>
+
+          </div>
+          <!--Experiencia #2-->
+          <div class="columna col-12 col-md-4">
+            <p class="experiencia-titulo">Ayudante de encargado</p>
+            <p class="experiencia-subtitulo">Pizzeria "Donato"</p>
+            <p class="experiencia-año">Septiembre 2020 - Febrero 2022</p>
+            <p class="experiencia-texto"> Adquiri poderosas herramientas comunicativas y administrativas gracias a que realizo parcialmente la administracion de proovedores y empleados. <br>
+              La orientacion al servicio es crucial en la atencion al cliente, puedo decir con seguridad que es uno de mis puntos fuertes.</p>
+              
+          </div>
+          <!--Experiencia #3-->    
+          <div class="columna col-12 col-md-4">
+            <p class="experiencia-titulo">Servicio Técnico</p>
+            <p class="experiencia-subtitulo"><a href="https://www.linkedin.com/company/pyxlconsulting/" target="_blank">Pyxl Consulting</a></p>
+            <p class="experiencia-año">Marzo 2022 - Actualidad </p>
+            <p class="experiencia-texto"></p>
+              
+          </div>               
+        </div>
+      </div>
+    </section>
+    <!--Seccion Educacion-->
+    <Section class="educacion seccion-oscura">
+      <h2 class="seccion-titulo-texto-blanco">Educación</h2>
+      <div class="carta-personalizada-3 row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="carta-centrada-imagen card h-100 ">
+            <img src="css/images/forge.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="carta-centrada-titulo card-title">Programa “Formación y Trabajo”</h5>
+              <p class="carta-centrada-texto card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla consequuntur itaque laboriosam debitis placeat non ducimus optio dicta exercitationem nobis eum qui, ab ut eveniet? Reiciendis, hic! Vitae, numquam quibusdam.</p>
+              <a class="link-texto d-grid gap-2 col-1 mx-auto" href="https://fondationforge.org/" target="_blank">Fundacion Forge</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="carta-centrada-imagen card h-100 ">
+            <img src="css/images/forge.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="carta-centrada-titulo card-title">Informática de hardware</h5>
+              <p class="carta-centrada-texto card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem aspernatur fugit, exercitationem obcaecati qui libero, nobis ullam commodi earum omnis explicabo vero cumque quam quod veniam culpa repudiandae ex iusto.</p>
+              <a class="link-texto d-grid gap-2 col-1 mx-auto" href="https://www.ibeltran.com.ar/" target="_blank">Instituto tecnologico Beltran</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="carta-centrada-imagen card h-100 ">
+            <img src="css/images/forge.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="carta-centrada-titulo card-title">Titulo</h5>
+              <p class="carta-centrada-texto card-text">Texto Aqui.</p>
+              <a class="link-texto d-grid gap-2 col-1 mx-auto" href="https://fondationforge.org/" target="_blank">Forge</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Seccion Educacion #2-->
+    <Section class="educacion seccion-oscura">
+      <div class="carta-personalizada-2 row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="carta-centrada-imagen card h-100 ">
+            <img src="css/images/forge.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="carta-centrada-titulo card-title">Titulo</h5>
+              <p class="carta-centrada-texto card-text">Texto Aqui.</p>
+              <a class="link-texto d-grid gap-2 col-1 mx-auto" href="https://fondationforge.org/" target="_blank">Forge</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="carta-centrada-imagen card h-100 ">
+            <img src="css/images/forge.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="carta-centrada-titulo card-title">Titulo</h5>
+              <p class="carta-centrada-texto card-text">Texto Aqui.</p>
+              <a class="link-texto d-grid gap-2 col-1 mx-auto" href="https://fondationforge.org/" target="_blank">Forge</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    </Section>
+    <!--Seccion Contacto-->
+    <section class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              Contacto
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactame
+            </div>
+            <div class="col-12 col-md-4">
+              asd
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+<a href="https://www.linkedin.com/in/franco-kutsukos/" target="_blank">Linkedin</a>
+  <a href="https://wa.me/+541127701851" target="_blank">WhatsApp</a>
+    <!--Js-->
+    <script src="js/function.js"></script>
     <!--Boostrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
