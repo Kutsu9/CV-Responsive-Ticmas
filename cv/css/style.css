@@ -1,6 +1,6 @@
 
 /*Estilos generales*/
-  section {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,7 +195,7 @@ justify-content: space-between;
 }
 .carta-personalizada-2 {
 max-width: 50rem;
-margin: 0 auto;
+margin: 0 auto; 
 }
 .carta-personalizada-3 {
   max-width: 75rem;
@@ -206,5 +206,5 @@ margin: 0 auto;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    align-content: center;
+    justify-content: center;
 }
