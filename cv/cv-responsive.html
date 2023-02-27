@@ -38,22 +38,22 @@
             </a>
             <!--Cambio de modo oscuro-claro-->
             <div class="d-grid gap-2 justify-content-start d-md-flex col-auto order-1">  <!--"col-auto order-1" hace que los botones esten hacia la izquierda, es una clase de grid-->
-                <button type="button" class="btn btn-claro"><i class="bi bi-brightness-high"></i></button>
+                <button type="button" id="btnclaro" class="btn btn-claro"><i class="bi bi-brightness-high"></i></button>
                 
-                <button type="button" class="btn btn-oscuro"><i class="bi bi-moon"></i></button>
+                <button type="button" id="btnoscuro" class="btn btn-oscuro"><i class="bi bi-moon"></i></button>
               </div>
             <ul class="navbar-nav d-flex justify-content-center align-item-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                <a class="nav-link active" aria-current="page" href="#Sobre-Mi">Sobre mi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Experiencia</a>
+                <a class="nav-link" href="#experiencia">Experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Educación</a>
+                <a class="nav-link" href="#educacion">Educación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -62,8 +62,8 @@
       </nav>
 
     <!--Seccion Hero-->
-    <section class="hero align-item-stretch">
-        <div class="hero-principal">
+    <section id="Sobre-Mi" class="hero align-item-stretch">
+        <div id="herooscuro" class="hero-principal">
             <img class="hero-imagen-perfil" src="/cv/css/images/fotoperfil.jpg" alt="Foto de Franco Kutsukos">
             <h1>Franco Kutsukos</h1>
             <h2>Estudiante - Ayudante de encargado</h2>
@@ -83,7 +83,7 @@
       </div>
     </section>
     <!--Seccion Experiencia-->
-    <section class="experiencia seccion-clara">
+    <section id="experiencia" class="experiencia seccion-clara">
       <div class="seccion-titulo"><h2>Experiencia</h2></div>
       <div class="container text-center">
         <div class="row">
@@ -117,8 +117,8 @@
       </div>
     </section>
     <!--Seccion Educacion-->
-    <Section class="educacion seccion-oscura">
-      <h2 class="seccion-titulo-texto-blanco">Educación</h2>
+    <section id="educacion" class="educacion seccion-oscura">
+      <h2 class="seccion-titulo-texto-blanco" id="Enormizar">Educación</h2>
       <div class="carta-personalizada-3 row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="carta-centrada-imagen card h-100 ">
@@ -152,6 +152,7 @@
         </div>
       </div>
     </div>
+    </section>
     <!--Seccion Educacion #2-->
     <Section class="educacion seccion-oscura">
       <div class="carta-personalizada-2 row row-cols-1 row-cols-md-2 g-4">
@@ -175,31 +176,43 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </Section>
-    <!--Seccion Contacto-->
-    <section class="contacto seccion-oscura">
-      <div class="container">
+  <!--Seccion Contacto-->
+    <Section id="contacto" class="contacto seccion-clara">
         <div class="container text-center d-flex justify-content-evenly">
           <div class="row">
-            <div class="col-12 col-md-4 seccion-titulo">
+            <div class="seccion-titulo">
               Contacto
             </div>
-            <div class="col-12 col-md-4 descripcion">
-              Contactame
-            </div>
-            <div class="col-12 col-md-4">
-              asd
-            </div>
+                <div class=" contacto-texto">
+                  Ponte en contacto ahora mismo. <br>
+                  Apurate no eres el primero en contactarme  
+                  <div>
+                    <button  id="visit" onclick="visitante()">Haz clic aquí para saber cuantos visitaron mi perfil</button>
+                  </div>
+                </div>
+                
+                <div  id="iconos" class="col-12 col-md-4">
+                  <a href="https://www.linkedin.com/in/franco-kutsukos/" rel="noopener" target="_blank"><img src="https://img.icons8.com/color/60/null/linkedin.png" alt="icono de linkedin" class="icon-contacto"></a>
+                </div>
+                <div class="col-12 col-md-4">
+                  <a href="https://wa.me/+541127701851" rel="noopener" target="_blank"><img src="https://img.icons8.com/color/60/null/whatsapp--v1.png" alt="icono de whatsapp" class="icon-contacto"></a>
+                </div>
+                <div class="col-12 col-md-4">
+                  <a href="https://www.gmail.com/" rel="noopener" target="_blank"><img src="https://img.icons8.com/color/48/null/gmail--v1.png" alt="icono de gmail" class="icon-contacto"></a>
+                </div>
           </div>
         </div>
       </div>
+    </Section>  
+  </div>
+  <footer>
+     <div class=" text-center ">
+     Franco Kutsukos - 2023
+    </div>
 
-
-    </section>
-
-<a href="https://www.linkedin.com/in/franco-kutsukos/" target="_blank">Linkedin</a>
-  <a href="https://wa.me/+541127701851" target="_blank">WhatsApp</a>
+  </footer>
     <!--Js-->
     <script src="js/function.js"></script>
     <!--Boostrap js-->
